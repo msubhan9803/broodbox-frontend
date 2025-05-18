@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.selected-flag {
+  border-radius: 12px 0 0 12px !important;
+}
+.swal2-styled.swal2-confirm {
+  color: white;
+  font-weight: normal;
+  background-color: #5604a9;
+  border-radius: 5px;
+  outline: white;
+}
+.swal2-styled.swal2-cancel {
+  color: black;
+  font-weight: normal;
+  background-color: white;
+}
+.swal2-popup .swal2-styled:focus {
+  box-shadow: none !important;
+}
+.highlight-date {
+  border: 2px solid #a64dff !important;
+}
+
+.react-calendar {
+  border: 1px solid rgb(210, 210, 210) !important;
+  border-radius: 5px;
+  box-shadow: 3px 2px 4px 0px rgb(242 242 242);
+}
+
+.react-calendar__tile {
+  border-radius: 39px;
+  height: 49.7px;
+  font-size: 1em;
+}
+
+.react-calendar__tile--active {
+  background: #a64dff;
+  color: white;
+  font-weight: 900;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #a64dff !important;
+  color: white;
+}
+
+.react-calendar__tile--now:enabled:hover, .react-calendar__tile--now:enabled:focus {
+  background: #a64dff !important;
+}
+
+.react-calendar__tile--now {
+  background: #dab4ff;
+}
+
+.swal2-container {
+  z-index: 999999999999999999;
+}

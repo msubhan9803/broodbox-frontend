@@ -1,0 +1,90 @@
+{
+  "name": "broodbox-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@hookform/resolvers": "^3.3.4",
+    "@reach/combobox": "^0.18.0",
+    "@reach/dialog": "^0.18.0",
+    "@react-google-maps/api": "^2.19.2",
+    "@reduxjs/toolkit": "^2.0.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ag-grid-react": "^31.0.1",
+    "apexcharts": "^3.45.1",
+    "axios": "^1.6.7",
+    "dotenv": "^16.3.1",
+    "formik": "^2.4.5",
+    "intro.js": "^7.2.0",
+    "intro.js-react": "^1.0.0",
+    "jwt-decode": "^4.0.0",
+    "leaflet": "^1.9.4",
+    "moment": "^2.30.1",
+    "notistack": "^3.0.1",
+    "preline": "^2.0.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-calendar": "^5.0.0",
+    "react-datepicker": "^6.6.0",
+    "react-dom": "^18.2.0",
+    "react-google-autocomplete": "^2.6.1",
+    "react-hook-form": "^7.50.1",
+    "react-icons": "^4.12.0",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-heatmap-layer-v3": "^3.0.3-beta-1",
+    "react-modal": "^3.16.1",
+    "react-modern-drawer": "^1.2.2",
+    "react-multi-date-picker": "^4.4.1",
+    "react-native-svg": "^15.1.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-photo-view": "^1.2.4",
+    "react-query": "^3.39.3",
+    "react-redux": "^9.0.4",
+    "react-responsive-modal": "^6.4.2",
+    "react-router-dom": "^5.2.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-toastify": "^10.0.4",
+    "react-youtube": "^10.1.0",
+    "redux": "^5.0.0",
+    "redux-persist": "^6.0.0",
+    "sweetalert2": "^11.10.5",
+    "sweetalert2-react-content": "^5.0.7",
+    "use-places-autocomplete": "^4.0.1",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.3.3"
+  },
+  "scripts": {
+    "start": "node init && react-scripts start",
+    "build": "node init && react-scripts build",
+    "deploy": "yarn build && powershell Compress-Archive -Path build/* -DestinationPath ./build.zip -Force && powershell -Command deployBroodbox",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy-mac": "./deploy.sh"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
